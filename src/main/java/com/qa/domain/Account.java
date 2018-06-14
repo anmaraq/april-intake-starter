@@ -1,7 +1,14 @@
 package com.qa.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Account {
 
+	@Id @GeneratedValue
+	private Long Id;
 	private String firstName;
 	private String secondName;
 	private String accountNumber;
